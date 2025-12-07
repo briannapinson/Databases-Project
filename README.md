@@ -2,7 +2,7 @@
 <h3>Riftbound Trading Card Database</h3>
 Submitted by: Brianna Pinson
 
-<h2>Features</h2>
+## Features
 The following required functionality is completed:
 - Browse card library (310 cards from Origins Main set)
 - User authentication
