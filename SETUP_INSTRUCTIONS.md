@@ -6,7 +6,6 @@ Install:
   https://nodejs.org/en
 - PostgreSQL (v15 or higher)
   https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
-- npm
 
 ## Database Setup
 
@@ -15,9 +14,14 @@ Install:
    CREATE DATABASE riftbounddb;
 ```
 
-2. Import the database:
+2. Connect to database:
 ```sql
-   \i 'path/to/riftbound_backup.sql'; 
+  \c riftbounddb
+```
+
+3. Import the database:
+```sql
+   \i 'C:/Users/YourName/Downloads/riftbound_backup.sql';   // Example path
 ```
 
 Tips:
@@ -25,14 +29,14 @@ Tips:
    - All backslashes are changed to forward slashes in path.
    - Path must include the riftbound_backup.sql file.
 
-3. If import is successful, you are free to close the shell with
+4. If import is successful, you are free to close the shell with
 ```sql
    \q
 ```
 
 ## Backend Setup
 
-1. Navigate to the backend folder :
+1. Navigate to the backend folder using terminal in VS Code or Command Prompt:
 ```bash
    cd backend
 ```
@@ -54,13 +58,13 @@ Thanks, Harry.
       DB_USER=postgres
       DB_HOST=localhost
       DB_NAME=riftbounddb
-      DB_PASSWORD='Enter your DB password here'
+      DB_PASSWORD=Enter-your-DB-password-here
       DB_PORT=5432
       JWT_SECRET=Your-Secret-Key
       PORT=3001
 ```
 Tips:
-To generate a random key, puse this command in the terminal and copy into the .env file for JWT_SECRET:
+To generate a random key, use this command in the terminal and copy into the .env file for JWT_SECRET:
 ```bash
     node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 ```
@@ -71,13 +75,14 @@ To generate a random key, puse this command in the terminal and copy into the .e
 ```
 
 ## Frontend Setup
+Note: Keep the backend server running. Open a new terminal window and navigate back to the project root before proceeding.
 
 1. Navigate to the frontend folder:
 ```bash
    cd frontend
 ```
 
-2. Open new terminal and install dependencies:
+2. Install dependencies:
 ```bash
    npm install
 ```
