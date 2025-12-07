@@ -1,6 +1,7 @@
 # Riftbound Card Collection Manager - Setup Instructions
 
 ## Prerequisites
+Install:
 - Node.js (v16 or higher)
   https://nodejs.org/en
 - PostgreSQL (v15 or higher)
@@ -9,7 +10,7 @@
 
 ## Database Setup
 
-1. Access the SQL Shell (psql) and  Create a new PostgreSQL database:
+1. Access the SQL Shell (psql) and create a new PostgreSQL database:
 ```sql
    CREATE DATABASE riftbounddb;
 ```
