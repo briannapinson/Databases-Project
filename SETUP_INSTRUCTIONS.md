@@ -17,7 +17,7 @@ Install:
 
 2. Import the database:
 ```sql
-   \i 'path/to/riftbound_backup.sql"; 
+   \i 'path/to/riftbound_backup.sql'; 
 ```
 
 Tips:
@@ -56,8 +56,13 @@ Thanks, Harry.
       DB_NAME=riftbounddb
       DB_PASSWORD='Enter your DB password here'
       DB_PORT=5432
-      JWT_SECRET=
+      JWT_SECRET=Your-Secret-Key
       PORT=3001
+```
+Tips:
+To generate a random key, puse this command in the terminal and copy into the .env file for JWT_SECRET:
+```bash
+    node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 ```
 
 4. Start the backend server:
