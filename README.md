@@ -25,4 +25,5 @@ Here's a walkthrough of implemented features:
 
 
 
-Notes
+## Notes
+- The Deck Builder has not been implemented.
