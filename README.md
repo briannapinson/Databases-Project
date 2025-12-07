@@ -4,7 +4,11 @@ Submitted by: Brianna Pinson
 
 <h2>Features</h2>
 The following required functionality is completed:
-
+- Browse card library (310 cards from Origins Main set)
+- User authentication
+- Personal card collections
+- Search and filter cards
+- Track card quantities
  
 <h2>Complete Video Walkthrough</h2>
 Here's a walkthrough of implemented features:
