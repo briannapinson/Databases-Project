@@ -1,0 +1,49 @@
+/* Your landing page styles */
+/*.landing-page {}
+  /* Add your styles here */
+
+
+/*#title {}
+  /* Your title styles */
+
+
+.weeklyVideos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1800px; 
+    margin: 0 auto;
+}
+
+.weeklyVideos iframe {
+    width: 100%;
+    max-width: 560px; /* keeps them at a good size */
+    flex: 1 1 calc(33.333% - 20px); /* 3 per row, accounting for gap */
+    min-width: 400px; /* prevents them from getting too small */
+    height: 315px;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 8px;
+}
+
+/* When screen is too small for 3, show 2 */
+@media (max-width: 1400px) {
+    .weeklyVideos iframe {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+/* On tablets/mobile, stack vertically */
+@media (max-width: 900px) {
+    .weeklyVideos {
+        flex-direction: column;
+    }
+    
+    .weeklyVideos iframe {
+        max-width: 100%;
+        min-width: 300px;
+    }
+}
